@@ -157,7 +157,7 @@ function comparar(data){
 
 // Incio do Jogo - Palavras aceitas
 function iniciaJogo(){
-    transportes=['ANDREYNA', 'KENZIE', 'DUCK', 'EBANX','RAFAEL','MIGUEL'];
+    transportes=['ANDREYNA', , 'DUCK', 'EBANX','RAFAEL','MIGUEL']; // Por a Kenzie
     primeiroclique = false;
     encontradas = 0;
     data = {};
