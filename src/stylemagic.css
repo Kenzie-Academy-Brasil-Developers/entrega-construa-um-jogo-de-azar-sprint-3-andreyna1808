@@ -32,17 +32,17 @@ h1, h2, h3 {
     box-shadow: rgba(230, 230, 230, 0.623) 5px 5px 80px 60px;
 }
 .voltar {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    border: 2px solid white;
-    padding: 5px;
-    font-size: 20px;
-    position: absolute;
-    left: 4px;
-    transition: 0.3s;
-    background-color: #0000;
-    top: 10px
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  border: 2px solid white;
+  padding: 5px;
+  font-size: 10px;
+  position: absolute;
+  left: 4px;
+  transition: 0.3s;
+  background-color: #0000;
+  top: 10px
 }
 .voltar:hover {
     text-decoration: none;
@@ -75,4 +75,17 @@ h1, h2, h3 {
     display: block;
     margin-top: 100px;
   }
+  .voltar {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 5px;
+    font-size: 20px;
+    position: absolute;
+    left: 4px;
+    transition: 0.3s;
+    background-color: #0000;
+    top: 10px
+}
 }
