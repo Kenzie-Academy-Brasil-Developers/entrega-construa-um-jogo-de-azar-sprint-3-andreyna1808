@@ -13,7 +13,7 @@ function numeros() {
 function resultados() {
 let resposta = numeros()
   if (resposta == 1) {
-    return "talvez, as chances são peqeunas, tu escolhe arriscar"
+    return "talvez, as chances são pequenas, tu escolhe arriscar"
   } if (resposta == 2) {
     return "Nem sonhando"
   } if (resposta == 3) {
