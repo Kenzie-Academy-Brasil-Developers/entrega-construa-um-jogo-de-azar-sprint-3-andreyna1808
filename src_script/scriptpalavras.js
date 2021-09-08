@@ -84,7 +84,7 @@ function vertical(fn){
 // DIAGONAL
 function diagonal(fn){
     console.log("seleção diagonal");
-    for(let i = data.linhainicial; i < data.colunafinal + 1; i++){
+    for(let i = data.linhainicial; i < data.linhafinal + 1; i++){
         let td = t.rows[data.linhainicial].cells[i];
         if(td.dataset.encontrada == "true"){
             td.classList.replace("encontrada", "selecionada");

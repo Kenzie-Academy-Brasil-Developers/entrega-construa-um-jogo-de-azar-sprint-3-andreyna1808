@@ -88,7 +88,7 @@ input:hover{
     border: none;
     width: 200px;
     height: 30px;
-    margin: 2px 400px;
+    margin: 2px 80px;
     box-shadow: 2px 2px 2px 2px;
     border-radius: 3px;
 }
@@ -188,7 +188,10 @@ input:hover{
         border: none;
         width: 200px;
         height: 30px;
-        margin: 2px 400px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 2px auto;
         box-shadow: 2px 2px 2px 2px;
         border-radius: 3px;
     }
