@@ -54,7 +54,7 @@ a:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
+    max-width: 1500px;
 }
 .copyright {
     margin: 100px;
@@ -71,5 +71,14 @@ figure{
     text-align: center;
     padding: 30px;
     background:linear-gradient(to bottom, red 5%, orange 100%);
+    }
+    .container{
+        margin: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 1500px;
     }
 }
