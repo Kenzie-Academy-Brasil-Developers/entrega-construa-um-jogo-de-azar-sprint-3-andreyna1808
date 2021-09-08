@@ -1,0 +1,128 @@
+h1, h2{
+    color: white;
+    font-size:30px;
+    text-align: center;
+}
+p {
+    color: orange;
+}
+.container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#dicas{
+    overflow-y: hidden;
+    height:400px;
+    width:20%;
+    text-align: justify;
+    padding: 3.5%;
+    font-size:17px;
+    position:relative;
+    margin: 2px;
+    top:.5%;
+    background-color: #F5F5F5;
+}
+.voltar {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 5px;
+    font-size: 20px;
+    position: absolute;
+    left: 4px;
+    transition: 0.3s;
+    background-color: #0000;
+    top: 10px
+}
+.voltar:hover {
+    text-decoration: none;
+    color: rgba(255, 138, 5, 0.938);
+    display: inline-block;
+    border: 2px solid rgb(243, 97, 0);
+    padding: 7px;
+    font-size: 22px;
+    position: absolute;
+    left: 4px;
+    transition: 1s;
+    background-color: #0000;
+    top: 10px
+}
+@media only screen and (min-width: 768px){
+	}
+	html, body{
+		margin:0;
+		padding:0;
+		background-color: rgb(41, 41, 41);
+	}
+	table{
+		width:25%;
+	}
+	table, tr, td{
+		border: 1px solid black;
+		background-color: rgb(194, 194, 194);
+	}
+	td{
+		font-weight: bold;
+		font-family: monospace;
+		font-size: 1.6em;
+		color: black;
+	}
+
+	td:hover{
+		background-color: #eca310;
+		cursor: pointer;
+	}
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+	.selecionada, .encontrada, .errado{
+		transition:.2s linear;
+	}
+	.selecionada{
+		background-color: orange;
+	}
+	.encontrada{
+		background-color: green;
+	}
+
+	.errado{
+		color: red;
+	}
+	#jogo{
+		text-align: center;
+	}
+	#parabens{
+		margin: auto;
+		text-align: center;
+		color: #FF5722;
+		transition: .2s linear 2s;
+		position:absolute;
+		top:50%;
+		left:0;
+		right:0;
+	}
+
+	#btnVoltar{
+		margin: auto;
+	}
+
+    .button{
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        width: 200px;
+        height: 30px;
+        margin: auto;
+        display: block;
+        box-shadow: 2px 2px 2px 2px;
+        border-radius: 3px;
+    }
+    .button:hover{
+        background:linear-gradient(to bottom, red 5%, orange 100%);
+    }

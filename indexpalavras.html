@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="img/CaçaPalavras.jpeg.jpeg" type="icon"/>
+    <link rel="stylesheet" href="src/stylepalavras.css">
+    <title> Caça Palavras</title>
+</head>
+
+<body>
+    <header>
+        <h1> Drica Jogos</h1>
+        <h1>Caça-palavras</h1>  
+        <a href="index.html" class="voltar"> Voltar aos Jogos</a>
+    </header>
+
+<div id="iniciar">
+		<button class="button" id="btnPlay">Jogar</button>
+	</div>
+    
+	<div id="jogo" hidden>
+		<h2 hidden id="parabens">Parabéns!</h2>
+		<button hidden id="btnVoltar">voltar?</button>
+		<p id="encontradas"></p>
+        <div class="container">
+            <table id="tabuleiro">
+            <div id="dicas">
+                <br>
+                <li> -- Regras do jogo: -- </li>
+                <br>
+                <li> Assim que você achar a palavra, aperte na 1° e na última, para validar</li>
+                <li> Tudo que faça sentido como palavra, pode tentar</li>
+                <li> Só olhe o código após concluir, ou você terá as respostas</li>
+                <li> Perdão por ter desistido, não consegui processar para a diagonal</li>
+                <br>
+                <li>  -- NOMES: -- </li>
+                <li> KENZIE</li>
+                <li> DUCK </li>
+                <li> EBANX</li>
+                <li> ANDREYNA</li>
+            </div>
+    </div>
+
+	<tr>
+		<td>K</td>
+		<td>A</td>
+		<td>K</td>
+		<td>C</td>	
+		<td>D</td>	
+		<td>E</td>	
+		<td>F</td>	
+		<td>C</td>	
+		<td>A</td>	
+		<td>R</td>	
+	</tr>
+	<tr>
+		<td>D</td>	
+		<td>K</td>	
+		<td>N</td>	
+		<td>E</td>	
+		<td>B</td>	
+		<td>D</td>	
+		<td>L</td>	
+		<td>T</td>	
+		<td>G</td>	
+		<td>W</td>	
+	</tr>
+	<tr>	
+		<td>U</td>	
+		<td>A</td>	
+		<td>M</td>	
+		<td>X</td>	
+		<td>N</td>	
+		<td>H</td>	
+		<td>Ã</td>	
+		<td>O</td>	
+		<td>X</td>	
+		<td>Z</td>	
+	</tr>
+
+<tr>	
+		<td>C</td>	
+		<td>E</td>	
+		<td>L</td>	
+		<td>V</td>	
+		<td>Ç</td>	
+		<td>Z</td>	
+		<td>B</td>	
+		<td>Q</td>	
+		<td>I</td>	
+		<td>M</td>	
+	</tr>
+	<tr>	
+		<td>K</td>	
+		<td>A</td>	
+		<td>B</td>	
+		<td>A</td>	
+		<td>L</td>	
+		<td>Ã</td>	
+		<td>I</td>	
+		<td>L</td>	
+		<td>H</td>	
+		<td>O</td>	
+	</tr>
+	<tr>	
+		<td>T</td>	
+		<td>B</td>	
+		<td>M</td>	
+		<td>E</td>	
+		<td>T</td>	
+		<td>R</td>	
+		<td>Ô</td>	
+		<td>E</td>	
+		<td>T</td>	
+		<td>X</td>	
+	</tr>
+	<tr>	
+		<td>R</td>	
+		<td>L</td>	
+		<td>Ã</td>	
+		<td>O</td>	
+		<td>J</td>	
+		<td>K</td>	
+		<td>Ç</td>	
+		<td>Y</td>	
+		<td>A</td>	
+		<td>R</td>	
+	</tr>
+	<tr>	
+		<td>E</td>	
+		<td>O</td>	
+		<td>B</td>	
+		<td>A</td>	
+		<td>R</td>	
+		<td>C</td>	
+		<td>O</td>	
+		<td>F</td>	
+		<td>V</td>	
+		<td>S</td>	
+	</tr>
+	<tr>	
+		<td>M</td>	
+		<td>Ã</td>	
+		<td>O</td>	
+		<td>H</td>	
+		<td>E</td>	
+		<td>L</td>	
+		<td>S</td>	
+		<td>U</td>	
+		<td>I</td>	
+		<td>B</td>	
+	</tr>
+	<tr>	
+		<td>A</td>	
+		<td>N</td>	
+		<td>D</td>	
+		<td>R</td>	
+		<td>E</td>	
+		<td>Y</td>	
+		<td>N</td>	
+		<td>A</td>	
+		<td>O</td>	
+		<td>M</td>	
+	</tr>
+	<tr>	
+		<td>F</td>	
+		<td>A</td>	
+		<td>V</td>	
+		<td>I</td>	
+		<td>O</td>	
+		<td>D</td>	
+		<td>H</td>	
+		<td>J</td>	
+		<td>T</td>	
+		<td>O</td>	
+	</tr>
+	<tr>	
+		<td>Q</td>	
+		<td>Ã</td>	
+		<td>E</td>	
+		<td>B</td>	
+		<td>A</td>	
+		<td>N</td>	
+		<td>X</td>	
+		<td>R</td>	
+		<td>I</td>	
+		<td>N</td>	
+	</tr>
+</div>
+    
+
+    <script src="src_script/scriptpalavras.js"></script>
+</body>
+</html>
