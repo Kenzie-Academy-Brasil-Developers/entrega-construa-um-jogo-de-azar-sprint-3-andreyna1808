@@ -81,7 +81,7 @@ function vertical(fn){
     }
 }
 
-// DIAGONAL
+// DIAGONAL EM CONSTRUÇÃO, IA PEGAR O MESMO RACIOCINIO E TENTAR APLICAR NA DIAGONAL
 function diagonal(fn){
     console.log("seleção diagonal");
     for(let i = data.linhainicial; i < data.linhafinal + 1; i++){
@@ -157,7 +157,7 @@ function comparar(data){
 
 // Incio do Jogo - Palavras aceitas
 function iniciaJogo(){
-    transportes=['ANDREYNA', 'KENZIE', 'DUCK', 'EBANX',];
+    transportes=['ANDREYNA', 'KENZIE', 'DUCK', 'EBANX','RAFAEL','MIGUEL'];
     primeiroclique = false;
     encontradas = 0;
     data = {};
