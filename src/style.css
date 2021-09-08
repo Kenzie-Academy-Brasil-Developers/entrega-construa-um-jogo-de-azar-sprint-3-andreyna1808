@@ -28,11 +28,23 @@ img{
     width: 200px;
     height: 40px;
     text-align: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    height: 36px;
+    padding: 7px;
+    text-align: center;
     cursor: pointer;
     align-items: center;
     background:linear-gradient(to bottom, gray 2%, white 100%);
 }
-.button:hover{
+a:hover{
     background:linear-gradient(to bottom, red 5%, orange 100%);
 }
 .container{
@@ -55,5 +67,9 @@ figure{
 }
 
 @media screen and (min-width: 768px) {
-
+    h1 {
+    text-align: center;
+    padding: 30px;
+    background:linear-gradient(to bottom, red 5%, orange 100%);
+    }
 }

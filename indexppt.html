@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="img/ppt.jpg" type="icon"/>
+    <link rel="stylesheet" href="src/styleppt.css">
+    <title> Pedra Papel Tesoura</title>
+</head>
+
+<body>
+    <header>
+        <h1> Drica Jogos</h1>
+        <a href="index.html" class="voltar"> Voltar aos Jogos</a>
+    </header>
+
+    <h1> Pedra Papel Tesoura </h1>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label"class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+
+    </div>
+    
+    <div class="result">
+    <p> Faça sua escolha</p>
+    </div>
+    
+    <div class="choices">
+    <div class="choice" id="r">
+        <img src='img/pedra.png'  alt="Pedra">
+    </div>
+    <div class="choice" id="p">
+        <img src="img/papel.png" alt="Papel">
+    </div>
+    <div class="choice" id="s">
+        <img src="img/tesoura.png" alt="Tesoura">
+    </div>
+    </div>
+    
+    <p id="action-message">Faça sua escolha!</p>
+
+    <button class="button" value="Refresh Page" onClick="window.location.reload()"> Zerar jogo</button>
+    
+    <script src="src_script/scriptppt.js"></script>
+</body>
+</html>

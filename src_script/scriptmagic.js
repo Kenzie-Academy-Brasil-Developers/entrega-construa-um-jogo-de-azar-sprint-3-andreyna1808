@@ -1,13 +1,19 @@
+
+const button = document.getElementById("ball");
+button.addEventListener("click", function(){ 
+   const perg = document.getElementById("resp")
+   perg.innerText = resultados()
+})
+
 function numeros() {
-    let resultado = Math.ceil(Math.random() * 20)
-  return resultado
+    let resp = Math.ceil(Math.random() * 20)
+  return resp
 }
 
-function respostaPossivel() {
+function resultados() {
 let resposta = numeros()
-
   if (resposta == 1) {
-    return "Não."
+    return "talvez, as chances são peqeunas, tu escolhe arriscar"
   } if (resposta == 2) {
     return "Nem sonhando"
   } if (resposta == 3) {
@@ -48,9 +54,3 @@ let resposta = numeros()
     return " Muito duvidoso."
   }
 }
-
-const button = document.getElementById("bola");
-button.addEventListener("click", function(){ 
-   const perg = document.getElementById("resultado")
-   perg.innerText = respostaPossivel()
-})

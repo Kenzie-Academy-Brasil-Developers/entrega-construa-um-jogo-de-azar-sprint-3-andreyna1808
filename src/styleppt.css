@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    color: rgb(206, 206, 206);
+}
+.voltar {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 5px;
+    font-size: 20px;
+    position: absolute;
+    left: 4px;
+    transition: 0.3s;
+    background-color: #0000;
+    top: 10px
+}
+
+header > h1{
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Asap', sans-serif;
+}
+
+.score-board{
+  border: 3px solid #fff;
+  width: 200px;
+  margin: 20px auto;
+  color: #fff;
+  font-size: 46px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px 20px;
+  font-family: sans-serif;
+  position: relative;
+}
+img {
+    width: 200px;
+}
+
+.badge{
+  background: #df2214;
+  font-size: 18px;
+  padding: 2px 15px;
+  font-size: 'Asap', sans-serif;
+}
+#user-label{
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+
+#computer-label{
+  position: absolute;
+  top: 30px;
+  right: -25px;
+}
+
+.result{
+  font-size: 40px;
+  color: #fff;
+}
+
+.result >  p {
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Asap',sans-serif;
+}
+
+.choices{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 30px;
+}
+
+.choice{
+  border: 4px solid #fff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 0 20px;
+  display: flex;
+}
+
+.choice:hover{
+  background: #313847;
+  cursor:pointer;
+}
+
+#action-message{
+  text-align: center;
+  color: #fff;
+  font-family: 'Asap',sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.green-glow{
+  border: 4px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow{
+  border: 4px solid #fc121b;
+  box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow{
+  border: 4px solid blue;
+  box-shadow: 0 0 10px blue;
+}
+.button{
+    cursor: pointer;
+    align-items: center;
+    border: none;
+    width: 200px;
+    height: 30px;
+    margin: 20px;
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 3px;
+}
+.button:hover{
+    background:linear-gradient(to bottom, red 5%, orange 100%);
+}
