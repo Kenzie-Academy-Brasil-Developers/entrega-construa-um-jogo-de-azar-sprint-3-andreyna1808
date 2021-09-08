@@ -174,7 +174,6 @@ function iniciaJogo(){
         }
     }
     document.getElementById("iniciar").hidden = true;
-    document.getElementById("parabens").hidden = true;
     document.getElementById("jogo").hidden = false;
     document.getElementById("btnVoltar").hidden = true;
 }

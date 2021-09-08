@@ -90,7 +90,8 @@ td:hover{
 #parabens{
     margin: auto;
     text-align: center;
-    color: #FF5722;
+    background-color: white;
+    color: red;
     transition: .2s linear 2s;
     position:absolute;
     top:50%;
@@ -247,15 +248,13 @@ td:hover{
 		text-align: center;
 	}
 	#parabens{
-		margin: auto;
-		text-align: center;
-		color: #FF5722;
-		transition: .2s linear 2s;
-		position:absolute;
-		top:50%;
-		left:0;
-		right:0;
-	}
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+        color: red;
+        transition: .2s linear 1s;
+        top: 180px;
+    }
 
 	#btnVoltar{
 		margin: auto;
