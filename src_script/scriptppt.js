@@ -1,19 +1,18 @@
 // Pontuações zeradas
-let userScore = 0;
-let computerScore = 0;
+let SuaPontacao = 0;
+let PcPontuacao = 0;
 
 // Básico
-const userScore_span =  document.getElementById("user-score");
-const computerScore_span = document.getElementById("computer-score");
-const scoreBoard_div = document.querySelector(".score-board");
+const SuaPontacao_span =  document.getElementById("user-score");
+const PcPontuacao_span = document.getElementById("computer-score");
 const result_p = document.querySelector(".result > p");
-const rock_div = document.getElementById("r");
-const paper_div =  document.getElementById("p");
-const scissors_div =  document.getElementById("s");
+const pedra = document.getElementById("r");
+const papel =  document.getElementById("p");
+const tesoura =  document.getElementById("s");
 
 //  Funções
 function getComputerChoice(){
-  const choices = ['r','p','s'];
+const choices = ['r','p','s'];
   const randomNumber = Math.floor(Math.random() * 3);
   return choices[randomNumber];
 }
@@ -28,9 +27,9 @@ function win(userChoice,computerChoice){
   const smallCompWord = "pc".fontsize(3).sub();
   const userChoice_div = document.getElementById(userChoice);
 
-  userScore++;
-  userScore_span.innerHTML  = userScore;
-  computerScore_span.innerHTML = computerScore;
+  SuaPontacao++;
+  SuaPontacao_span.innerHTML  = SuaPontacao;
+  PcPontuacao_span.innerHTML = PcPontuacao;
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} ganha ${convertToWord(computerChoice)}${smallCompWord} Você ganhou! 😎🥳`;
   userChoice_div.classList.add('green-glow');
   document.getElementById('user-label').classList.add('animated','flash')
@@ -38,7 +37,7 @@ function win(userChoice,computerChoice){
   setTimeout(function () {
     userChoice_div.classList.remove('green-glow');
     document.getElementById('user-label').classList.remove('animated','flash');
-  },1500);
+  },1000);
 
 }
 
@@ -47,9 +46,9 @@ function lose(userChoice,computerChoice){
   const smallCompWord = "pc".fontsize(3).sub();
   const userChoice_div = document.getElementById(userChoice);
 
-  computerScore++;
-  userScore_span.innerHTML  = userScore;
-  computerScore_span.innerHTML = computerScore;
+  PcPontuacao++;
+  SuaPontacao_span.innerHTML  = SuaPontacao;
+  PcPontuacao_span.innerHTML = PcPontuacao;
   result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} perde para ${convertToWord(computerChoice)}${smallCompWord} Você Perdeu! 😪😖`;
   userChoice_div.classList.add('red-glow');
   document.getElementById('computer-label').classList.add('animated','flash');
@@ -57,7 +56,7 @@ function lose(userChoice,computerChoice){
   setTimeout(function () {
     userChoice_div.classList.remove('red-glow');
     document.getElementById('computer-label').classList.remove('animated','flash');
-  },1500);
+  },1000);
 
 }
 
@@ -97,10 +96,10 @@ function game(userChoice){
   }
 
 }
-function main(){
-  rock_div.addEventListener('click', () => game("r"));
-  paper_div.addEventListener('click', () => game("p"));
-  scissors_div.addEventListener('click', () => game("s"));
+function escolha(){
+  pedra.addEventListener('click', () => game("r"));
+  papel.addEventListener('click', () => game("p"));
+  tesoura.addEventListener('click', () => game("s"));
 }
 
-main();
+escolha();
