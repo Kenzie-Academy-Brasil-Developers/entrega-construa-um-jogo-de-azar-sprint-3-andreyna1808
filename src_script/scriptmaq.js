@@ -7,19 +7,20 @@ function rodar() {
     return Math.floor(Math.random() * 8 + 1);
 }
 function comando() {
-
     let counter = 0;
 
     document.getElementById("resultado").innerHTML = "";
     
     // Manda tudo
     let randomImg = setInterval(function () {
+
         counter++;
         for (var i = 1; i <= 8; i++) {
             left.src = "./img/" + rodar() + ".png";
             center.src = "./img/" + rodar() + ".png";
             right.src = "./img/" + rodar() + ".png";
         }
+
         if (counter > 7){ 
             if ((left.src === center.src) && (center.src === right.src)) {
                 let result = document.getElementById("resultado")
@@ -35,5 +36,8 @@ function comando() {
     }, 80);
 }
 
-const button = document.getElementById("startButton");
+
+const button = document.querySelector("input");
 button.addEventListener("click", comando)
+
+
