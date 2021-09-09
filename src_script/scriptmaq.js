@@ -20,7 +20,7 @@ function comando() {
             center.src = "./img/" + rodar() + ".png";
             right.src = "./img/" + rodar() + ".png";
         }
-        if (counter > 50){ 
+        if (counter > 7){ 
             if ((left.src === center.src) && (center.src === right.src)) {
                 let result = document.getElementById("resultado")
                 result.innerHTML = "Milagres Existem!!!";
@@ -32,7 +32,7 @@ function comando() {
         counter = 0;
         clearInterval(randomImg);
         }
-    }, 50);
+    }, 80);
 }
 
 const button = document.getElementById("startButton");
