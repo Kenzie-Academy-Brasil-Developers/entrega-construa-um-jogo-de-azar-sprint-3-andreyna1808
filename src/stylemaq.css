@@ -4,6 +4,42 @@ body {
     color: rgb(223, 223, 223);
     background-image: url(../img/cassino.png);
     background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* COMANDO DE JOGAR */
+#jogo{
+	text-align: center;
+}
+
+#btnPlay{
+	margin:auto;
+	display: block;
+}
+
+#parabens{
+	margin: auto;
+	text-align: center;
+	color: #FF5722;
+	transition: .2s linear 2s;
+}
+
+#btnVoltar{
+	margin: auto;
+}
+
+.button:hover{
+    background:linear-gradient(to bottom, red 5%, orange 100%);
+}
+#btnPlay {
+    cursor: pointer;
+    width: 250px;
+    height: 80px;
+}
+#btnPlay:hover{
+    background:linear-gradient(to bottom, red 5%, orange 100%);
 }
 h1 {
     margin-bottom: 2px;

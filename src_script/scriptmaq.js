@@ -36,8 +36,17 @@ function comando() {
     }, 80);
 }
 
+/* INICIAÇÃO DO JOGO COM A MÚSICA */
+function iniciaJogo(){
+			document.getElementById("iniciar").hidden = true;
+			document.getElementById("jogo").hidden = false;
+		}
+		let btnPlay = document.getElementById("btnPlay");
+		btnPlay.onclick = function(){
+            const audio = document.querySelector('audio')
+            audio.play()
+			iniciaJogo();
+		}
 
 const button = document.querySelector("input");
 button.addEventListener("click", comando)
-
-

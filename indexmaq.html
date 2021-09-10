@@ -11,27 +11,40 @@
 </head>
 
 <body>
+    <!-- 1° -->
     <header>
-        <h1> ---- Drica Jogos ---- </h1>
         <a href="index.html" class="voltar"> Voltar aos Jogos</a>
-        <h1> --- Caça Níquel --- </h1>
     </header>
-    <div class="content">
-        <table>
-            <tr>
-                <td><img class="capa" src="./img/win.jpeg" id="esquerda"></td>
-                <td><img class="capa" src="./img/win.jpeg" id="centro"></td>
-                <td><img class="capa" src="./img/win.jpeg" id="direita"></td>
-            </tr>
-        </table>
 
-        <form action="">
-            <input id="button" type="button" value="Bora perder uns money?">
-        </form>
-        <div class="title"> Então...  <span id="resultado"></span></div>
+    <!-- 2° -->
+    <section class="titulos">
+        <h1> ---- Drica Jogos ---- </h1>
+        <h1> --- Caça Níquel --- </h1>
+        <div id="iniciar">
+            <button id="btnPlay">Jogar</button>
+            <audio id="audio" src="./img/cassin.mp3" autoplay loop></audio>
+	    </div>
+    </section>
+
+    <!-- 3° -->>
+    <div id="jogo" hidden>
+        <div class="content">
+            <table>
+                <tr>
+                    <td><img class="capa" src="./img/win.jpeg" id="esquerda"></td>
+                    <td><img class="capa" src="./img/win.jpeg" id="centro"></td>
+                    <td><img class="capa" src="./img/win.jpeg" id="direita"></td>
+                </tr>
+            </table>
+
+            <form action="">
+                <input id="button" type="button" value="Bora perder uns money?">
+            </form>
+
+            <div class="title"> Então...  <span id="resultado"></span></div>
+            <button class="button" value="Refresh Page" onClick="window.location.reload()"> Zerar jogo</button>
+        </div>
     </div>
-
-    <button class="button" value="Refresh Page" onClick="window.location.reload()"> Zerar jogo</button>
     <script src="src_script/scriptmaq.js"></script>
 </body>
 </html>
