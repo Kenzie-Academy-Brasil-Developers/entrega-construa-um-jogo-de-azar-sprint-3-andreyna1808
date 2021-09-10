@@ -18,18 +18,9 @@ body {
 	margin:auto;
 	display: block;
 }
-
-#parabens{
-	margin: auto;
-	text-align: center;
-	color: #FF5722;
-	transition: .2s linear 2s;
-}
-
 #btnVoltar{
 	margin: auto;
 }
-
 .button:hover{
     background:linear-gradient(to bottom, red 5%, orange 100%);
 }

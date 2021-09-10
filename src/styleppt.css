@@ -10,10 +10,15 @@ body {
   background: black;
 }
 
-h1, h2, p {
+h1 {
   font-size: 18px;
   color: rgb(206, 206, 206);
 }
+h2, p {
+  font-size: 15px;
+  color: rgb(206, 206, 206);
+}
+
 .voltar {
   text-decoration: none;
   color: white;
@@ -133,6 +138,31 @@ img {
 .button:hover{
     background:linear-gradient(to bottom, red 5%, orange 100%);
 }
+
+/* COMANDO DE JOGAR */
+#jogo{
+	text-align: center;
+}
+
+#btnPlay{
+  display: block;
+  cursor: pointer;
+  width: 250px;
+  height: 80px;
+  position:absolute; 
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%)
+}
+
+.button:hover{
+    background:linear-gradient(to bottom, red 5%, orange 100%);
+}
+
+#btnPlay:hover{
+    background:linear-gradient(to bottom, red 5%, orange 100%);
+}
+
 
 @media screen and (min-width: 768px){
   .voltar {

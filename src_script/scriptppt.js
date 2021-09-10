@@ -20,7 +20,6 @@ function convertToWord(letter){
   if (letter == 'r') return "Pedra";
   if (letter == 'p') return "Papel"
   return "Tesoura";
-
 }
 function win(userChoice,computerChoice){
   const smallUserWord = "vc".fontsize(3).sub();
@@ -101,5 +100,16 @@ function escolha(){
   papel.addEventListener('click', () => game("p"));
   tesoura.addEventListener('click', () => game("s"));
 }
-
 escolha();
+
+/* INICIAÇÃO DO JOGO COM A MÚSICA */
+function iniciaJogo(){
+  document.getElementById("iniciar").hidden = true;
+  document.getElementById("jogo").hidden = false;
+}
+let btnPlay = document.getElementById("btnPlay");
+btnPlay.onclick = function(){
+        const audio = document.querySelector('audio')
+        audio.play()
+  iniciaJogo();
+}
