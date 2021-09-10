@@ -87,6 +87,7 @@ img {
 .choices{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     margin: 30px;
 }
@@ -95,8 +96,8 @@ img {
   border: 4px solid #fff;
   border-radius: 50%;
   padding: 15px;
-  display: flex;
   flex-direction: row;
+  display: flex;
 }
 
 .choice:hover{
