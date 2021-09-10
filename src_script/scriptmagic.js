@@ -54,3 +54,14 @@ let resposta = numeros()
     return " Muito duvidoso."
   }
 }
+/* INICIAÇÃO DO JOGO COM A MÚSICA */
+function iniciaJogo(){
+  document.getElementById("iniciar").hidden = true;
+  document.getElementById("jogo").hidden = false;
+}
+let btnPlay = document.getElementById("btnPlay");
+btnPlay.onclick = function(){
+        const audio = document.querySelector('audio')
+        audio.play()
+  iniciaJogo();
+}
